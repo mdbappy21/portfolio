@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAPPY</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+
+<body class="">
+<header class="md:container mx-auto">
+    <!-- navber -->
+    <nav>
+        <div class="navbar bg-[#000000] text-white">
+            <div class="flex-1">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h8m-8 6h16"/>
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact</a></li>
+
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-3xl">Bappy's <span
+                        class="text-[#FF5733]">Protfolio</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li class="text-[#FF5733]"><a>Portfolio</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="">
+                <!-- <a class="btn btn-primary bg-[] text-white">Contact Me</a> -->
+            </div>
+        </div>
+    </nav>
+    <!-- banner -->
+    <div style="background-image: url('img/Bg1.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="hero min-h-screen">
+
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <img src="img/img1.jpg" alt="Round Picture" class="max-w-sm rounded-lg shadow-2xl"
+                     style="border-radius: 50%; width: 200px; height: 200px; overflow: hidden; width: 100%; height: 100%; object-fit: cover;"/>
+                <div>
+                    <h1 class="text-xl font-bold text-white"><span
+                            class="bg-[] rounded-md">Hello</span> I'm <br>
+                        <span class="text-5xl font font-extrabold">Md Bappy</span></h1>
+                    <h1 class="text5xl font-bold text-white">Developer</h1>
+                    <p class="py-6 text-white">A pationate Computer Science and Engineering student at <br>
+                        Daffodil International University . I Always search for new <br>knowladge based on programming
+                        and devolopment .</p>
+                    <!-- <button class="btn bg-[#FF5733] text-white">Say Hello</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<main class="md:container mx-auto bg-[#2E2F32]">
+
+    <!-- about me section -->
+    <section>
+
+        <div class="hero min-h-screen bg-[#181508]">
+            <div class="hero-content flex-col lg:flex-row">
+                <img src="img/img2.jpg" alt="Round Picture" class="max-w-sm rounded-lg shadow-2xl"
+                     style="border-radius: 50%; width: 200px; height: 200px; overflow: hidden; width: 100%; height: 100%; object-fit: cover;"/>
+                <div class="space-y-5">
+                    <h1 class="text-5xl font-bold text-white">About <span
+                            class="text-[#FF5733]">Me</span></h1>
+                    <h2 class="text-3xl font-bold text-white">Creative Programmer & Devoloper</h2>
+                    <p class="py-6 text-white">As an accomplished developer, skilled in Java, Android, and Flutter,
+                        I thrive on creating innovative and user-friendly applications. With a passion for coding
+                        and problem-solving, my expertise lies in crafting efficient and elegant software solutions.
+                        From building dynamic Android apps to crafting cross-platform Flutter experiences, I embrace
+                        the challenges of the ever-evolving tech landscape. Dedicated to delivering top-notch products,
+                        I constantly seek to expand my knowledge and stay ahead of the curve. My commitment to excellence
+                        drives me to create impactful software that enhances user experiences and brings ideas to life.</p>
+                    <button class="btn bg-[#FF5733] text-white">More About</button>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- another section -->
+    <section class="p-10"
+             style="background-image: url('img/Bg1.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+        <p class="text-4xl font-bold text-white text-center"><span class="text-[#FF5733] ">My</span> Services</p>
+        <div class="flex flex-col lg:flex-row justify-around pt-10">
+            <!--1st card-->
+            <div>
+                <div class="card w-96 bg-[#2B2A2B] shadow-xl text-white">
+                    <figure class="px-10 pt-10">
+                        <img src="img/html.png" alt="img" class="rounded-xl" height="50px" width="50px"/>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="text-3xl font-bold">Html</h2>
+                        <p>Experienced HTML developer adept at crafting web content and interfaces. Proficient in using
+                            HTML tags and elements to create user-friendly and visually engaging websites. Passionate
+                            about staying updated on web standards and delivering exceptional user experiences.</p>
+                        <div class="card-actions">
+                            <button class="btn text-white bg-[#2B2A2B]">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd card -->
+            <div>
+                <div class="card w-96 bg-[#2B2A2B] shadow-xl text-white">
+                    <figure class="px-10 pt-10">
+                        <img src="img/CSS.png" alt="img" class="rounded-xl" height="50px" width="50px"/>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="text-3xl font-bold">Css</h2>
+                        <p>Skilled CSS developer with expertise in styling and layout. Proficient in crafting visually
+                            appealing and responsive web designs. Committed to enhancing user experiences through creative
+                            use of CSS properties and selectors.</p>
+                        <div class="card-actions">
+                            <button class="btn text-white bg-[#2B2A2B]">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd card -->
+            <div>
+                <div class="card w-96 bg-[#2B2A2B] shadow-xl text-white">
+                    <figure class="px-10 pt-10">
+                        <img src="img/xml.png" alt="img" class="rounded-xl" height="40px" width="40px"/>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="text-3xl font-bold">Xml</h2>
+                        <p>Proficient XML developer with a strong understanding of structured data. Experienced in designing
+                            and transforming data for diverse applications. Expertise in creating interoperable and
+                            platform-independent solutions using XML markup.</p>
+                        <div class="card-actions">
+                            <button class="btn text-white bg-[#2B2A2B]">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-around pt-10">
+            <!-- 4th card -->
+            <div>
+                <div class="card w-96 bg-[#2B2A2B] shadow-xl text-white">
+                    <figure class="px-10 pt-10">
+                        <img src="img/c.png" alt="img" class="rounded-xl" height="50px" width="50px"/>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="text-3xl font-bold">C</h2>
+                        <p>Experienced C programmer with a passion for low-level and high-performance coding. Proficient
+                            in developing efficient algorithms and data structures. Skilled in software development,
+                            debugging, and optimizing applications for optimal performance and reliability.</p>
+                        <div class="card-actions">
+                            <button class="btn text-white bg-[#2B2A2B]">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 5th card -->
+            <div>
+                <div class="card w-96 bg-[#2B2A2B] shadow-xl text-white">
+                    <figure class="px-10 pt-10">
+                        <img src="img/java.svg" alt="img" class="rounded-xl" height="100px" width="70px"/>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="text-3xl font-bold">Java</h2>
+                        <p>Java programmer with a keen eye for detail. Proficient in designing, developing, and maintaining
+                            Java applications. Adept at collaborating with teams to achieve project goals. Continuously
+                            enhancing skills to deliver high-quality and cutting-edge software solutions.</p>
+                        <div class="card-actions">
+                            <button class="btn text-white bg-[#2B2A2B]">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 6th card -->
+            <div>
+                <div class="card w-96 bg-[#2B2A2B] shadow-xl text-white">
+                    <figure class="px-10 pt-10">
+                        <img src="img/android.png" alt="img" class="rounded-xl" height="80px" width="80px"/>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="text-3xl font-bold">Android</h2>
+                        <p>Experienced Android developer proficient in Java/Kotlin and Android Studio. Adept at designing
+                            and developing user-friendly mobile applications with a focus on performance, UI/UX, and
+                            integration of various APIs. Committed to delivering top-notch apps for diverse devices and versions.</p>
+                        <div class="card-actions">
+                            <button class="btn text-white bg-[#2B2A2B]">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- contact section -->
+    <section class="p-20 bg-[#181508]">
+
+
+        <div class="flex justify-around flex-col md:flex-col lg:flex-row">
+
+
+            <div class="text-white space-y-4" style="margin:100px">
+                <h2 class="text-3xl font-bold ">Contact <span class="text-[#FF5733] ">Me!</span></h2>
+                <p class="text-2xl font font-medium">If You Have Any Project In Your Mind</p>
+                <p> I'm a software developer creating best software & brave <br> interface for you.</p>
+                <p class="text-sm">01781641350</p>
+                <p>bappy15-5656@diu.edu.bd</p>
+
+                <div class="gap-4 space-x-5">
+                    <a href="https://www.facebook.com/mdsohanurrahman.bappy.9?mibextid=ZbWKwL" target="_blank"> <i class="fab fa-facebook fa-2x"></i></a>
+
+                    <a href="https://t.me/mdbappy21" target="_blank">  <i class="fa-brands fa-telegram fa-2x"></i> </a>
+
+                    <a href="https://wa.link/c79zkw" target="_blank"> <i class="fa-brands fa-whatsapp fa-2x"></i></a>
+
+                    <a href="mailto:bappy15-5656@diu.edu.bd" target="_blank"> <i class="fa-solid fa-envelope fa-2x"></i> </a>
+                </div>
+
+            </div>
+
+
+            <div class="space-y-8">
+                <h2 class="text-2xl font-bold text-white" style="text-align:left;padding:20px">Ask me any question?</h2>
+
+                <div class="flex-col space-y-7  ">
+
+                    <input type="text" placeholder="Your Name" class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
+                           style="color:white"/> <br>
+                    <input type="email" placeholder="Your Email Address"
+                           class="input input-bordered w-full max-w-xs bg-[#2B2A2B]" style="color:white"/> <br>
+                    <input type="text" placeholder="Your Phonre Number "
+                           class="input input-bordered w-full max-w-xs bg-[#2B2A2B]" style="color:white"/>
+                    <textarea name="" id="" cols="60" rows="10" placeholder="How can i help you?" class="bg-[#2B2A2B]"
+                              style="color:white;"></textarea>
+
+                </div>
+                <button class="btn bg-[#FF5733] text-white">Send Messaage</button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+</main>
+<footer class="footer footer-center p-10 bg-[#000000] text-white text-base-content rounded md:container mx-auto">
+    <!-- <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded"> -->
+    <div class="grid grid-flow-col gap-4">
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+    </div>
+    <div>
+        <div class="grid grid-flow-col gap-4">
+            <a href="https://www.facebook.com/mdsohanurrahman.bappy.9?mibextid=ZbWKwL" target="_blank"> <i class="fab fa-facebook fa-2x"></i></a>
+
+            <a href="https://t.me/mdbappy21" target="_blank">  <i class="fa-brands fa-telegram fa-2x"></i> </a>
+
+            <a href="https://wa.link/c79zkw" target="_blank"> <i class="fa-brands fa-whatsapp fa-2x"></i></a>
+
+            <a href="mailto:bappy15-5656@diu.edu.bd" target="_blank"> <i class="fa-solid fa-envelope fa-2x"></i> </a>
+        </div>
+    </div>
+    <div>
+        <p>Copyright © 2023 - All right reserved by Md Bappy</p>
+    </div>
+    <!-- </footer> -->
+</footer>
+
+</body>
+
+</html>
