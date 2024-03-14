@@ -1,125 +1,509 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>BAPPY's portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body class="">
-
-<header style="width: 100%; background-color: #000000; color: white;">
-    <!-- navber -->
-    <nav>
+  <body class="">
+    <header style="width: 100%; background-color: #000000; color: white">
+      <!-- navber -->
+      <nav>
         <div class="navbar bg-[#000000] text-white">
-            <div class="flex-1">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M4 6h16M4 12h8m-8 6h16"/>
-                        </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="hide-on-small-screen"><a href="#">Portfolio</a></li>
-                        <li><a href="Services.html" target="_self">Services</a></li>
-                        <li><a href="contact.html" target="_self">Contact</a></li>
-                    </ul>
-                </div>
-                <a class="btn btn-ghost normal-case text-3xl">Bappy's <span
-                        class="text-[#FF5733]">Portfolio</span></a>
+          <div class="flex-1">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a href="index.html">Home</a></li>
+                <li class="hide-on-small-screen"><a href="#">Portfolio</a></li>
+                <li><a href="" target="_self">Services</a></li>
+                <li><a href="" target="_self">Contact</a></li>
+              </ul>
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li class="text-[#FF5733]"><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Portfolio</a></li>
-                    <li><a href="Services.html" target="_self">Services</a></li>
-                    <li><a href="contact.html" target="_self">Contact</a></li>
-                </ul>
-            </div>
-            <div class=""></div>
+            <a class="btn btn-ghost normal-case text-3xl"
+              >Bappy's <span class="text-[#FF5733]">Portfolio</span></a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-[#FF5733]"><a href="index.html">Home</a></li>
+              <li><a href="#aboutSection">About</a></li>
+              <li><a href="#ServiceSection" target="_self">Services</a></li>
+              <li><a href="#ContactSection" target="_self">Contact</a></li>
+            </ul>
+          </div>
+          <div class=""></div>
         </div>
-    </nav>
-    <!-- banner -->
-    <div style="background-image: url('img/Bg1.jpg'); background-repeat: no-repeat; background-size: cover;">
+      </nav>
+      <!-- banner -->
+      <div
+        style="
+          background-image: url('img/Bg1.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
         <div class="hero min-h-screen">
-
-            <div class="hero-content flex-col lg:flex-row-reverse">
-                <img src="img/img1.jpg" alt="Round Picture" class="max-w-sm rounded-lg shadow-2xl" style="margin-left:100px;border-radius: 50%; width: 200px; height: 200px; overflow: hidden; width: 100%; height: 100%; object-fit: cover;"/>
-                <div>
-                    <h1 class="text-xl font-bold text-white"><span
-                            class="bg-[] rounded-md">Hello</span> I'm <br>
-                        <span class="text-5xl font font-extrabold">Md Bappy</span></h1>
-                    <h1 class="text5xl font-bold text-white">Creative web developer</h1>
-                    <p class="py-6 text-white">A pationate Computer Science and Engineering student at <br>
-                        Daffodil International University . I Always search for new <br>knowladge based on programming
-                        and devolopment .</p>
-                    <!-- <button class="btn bg-[#FF5733] text-white">Say Hello</button> -->
-                </div>
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img
+              src="img/img1.jpg"
+              alt="Round Picture"
+              class="max-w-sm rounded-lg shadow-2xl"
+              style="
+                margin-left: 100px;
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              "
+            />
+            <div>
+              <h1 class="text-xl font-bold text-white">
+                <span class="bg-[] rounded-md">Hello</span> I'm <br />
+                <span class="text-5xl font font-extrabold">Md Bappy</span>
+              </h1>
+              <h1 class="text5xl font-bold text-white">
+                Flutter Developer
+              </h1>
+              <p class="py-6 text-white">
+                A pationate Computer Science and Engineering student at <br />
+                Daffodil International University . I Always search for new
+                <br />knowladge based on programming and devolopment .
+              </p>
+              <!-- <button class="btn bg-[#FF5733] text-white">Say Hello</button> -->
             </div>
+          </div>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-<main class="bg-[#2E2F32]">
-
-    <!-- about me section -->
-    <section>
-
+    <main class="bg-[#2E2F32]">
+      <!-- about me section -->
+      <section id="aboutSection">
         <div class="hero min-h-screen bg-[#181508]">
-            <div class="hero-content flex-col lg:flex-row">
-                <img src="img/img2.jpg" alt="Round Picture" class="max-w-sm rounded-lg shadow-2xl" style="margin-right:50px;border-radius: 50%; width: 1806px !important; height: 355px!important; overflow: hidden; width: 100%; height: 100%; object-fit: cover;"/>
-                <div class="space-y-5">
-                    <h1 class="text-5xl font-bold text-white">About <span
-                            class="text-[#FF5733]">Me</span></h1>
-                    <h2 class="text-3xl font-bold text-white">Creative Programmer & Devoloper</h2>
-                    <p class="py-6 text-white">As an accomplished developer, skilled in Java, Android, and Flutter,
-                        I thrive on creating innovative and user-friendly applications. With a passion for coding
-                        and problem-solving, my expertise lies in crafting efficient and elegant software solutions.
-                        From building dynamic Android apps to crafting cross-platform Flutter experiences, I embrace
-                        the challenges of the ever-evolving tech landscape. Dedicated to delivering top-notch products,
-                        I constantly seek to expand my knowledge and stay ahead of the curve. My commitment to excellence
-                        drives me to create impactful software that enhances user experiences and brings ideas to life.</p>
-                    <button class="btn bg-[#FF5733] text-white">More About</button>
-
-                </div>
+          <div class="hero-content flex-col lg:flex-row">
+            <img
+              src="img/img2.jpg"
+              alt="Round Picture"
+              class="max-w-sm rounded-lg shadow-2xl"
+              style="
+                margin-right: 50px;
+                border-radius: 50%;
+                width: 1806px !important;
+                height: 355px !important;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              "
+            />
+            <div class="space-y-5">
+              <h1 class="text-5xl font-bold text-white">
+                About <span class="text-[#FF5733]">Me</span>
+              </h1>
+              <h2 class="text-3xl font-bold text-white">Flutter Developer</h2>
+              <p class="py-6 text-white">
+                As a Flutter developer, my expertise lies in creating
+                cross-platform applications using Dart, guaranteeing fluid user
+                experiences. I possess proficiency in widget-based UI design,
+                state management, and seamless platform integration. My skills
+                extend to testing, debugging, and CI/CD pipelines, ensuring
+                robust application performance. Actively participating in the
+                Flutter community, I contribute to open-source projects.
+                Additionally, my proficiency in C, C++, and Java enables
+                versatile software development across domains. This diverse
+                skill set empowers me to tackle projects comprehensively and
+                deliver high-quality solutions efficiently.
+              </p>
+              <button class="btn bg-[#FF5733] text-white">More About</button>
             </div>
+          </div>
         </div>
+      </section>
+    </main>
+    <!-- Service section -->
+    <section
+      id="ServiceSection"
+      style="
+        background-image: url('img/Bg1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <p class="text-4xl font-bold text-white">
+        <span class="text-[#FF5733]">My</span> Services
+      </p>
+      <div class="flex flex-wrap justify-center pt-10">
+        <!-- 1st card -->
+        <div
+          class="card"
+          style="
+            width: 100%;
+            max-width: 400px;
+            background-color: #2b2a2b;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+          "
+        >
+          <figure class="px-10 pt-10">
+            <img
+              src="img/flutter.png"
+              alt="Flutter"
+              style="max-width: 50px; max-height: 50px"
+            />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="text-3xl font-bold">Flutter</h2>
+            <p>
+              I offer Flutter development services, crafting cross-platform
+              applications using Dart for seamless user experiences. Expertise
+              in UI design, state management, and platform integration ensures
+              top-notch solutions for clients.
+            </p>
+            <div class="card-actions">
+              <button class="btn text-white bg-[#2B2A2B]">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd card -->
+        <div
+          class="card"
+          style="
+            width: 100%;
+            max-width: 400px;
+            background-color: #2b2a2b;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+          "
+        >
+          <figure class="px-10 pt-10">
+            <img
+              src="img/Dart.png"
+              alt="dart"
+              style="max-width: 50px; max-height: 50px"
+            />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="text-3xl font-bold">Dart</h2>
+            <p>
+              Specializing in Dart programming, I deliver high-quality
+              services tailored to your needs. From building scalable 
+              applications to crafting efficient algorithms, I ensure 
+              robust and reliable solutions for your business.
+            </p>
+            <div class="card-actions">
+              <button class="btn text-white bg-[#2B2A2B]">Read More</button>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd card -->
+        <div
+          class="card"
+          style="
+            width: 100%;
+            max-width: 400px;
+            background-color: #2b2a2b;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+          "
+        >
+          <figure class="px-10 pt-10">
+            <img
+              src="img/java.svg"
+              alt="Java"
+              style="max-width: 50px; max-height: 50px"
+            />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="text-3xl font-bold">Java</h2>
+            <p>
+              Java programmer with a keen eye for detail. Proficient in
+              designing, developing, and maintaining Java applications. Adept at
+              collaborating with teams to achieve project goals. Continuously
+              enhancing skills to deliver high-quality and cutting-edge software
+              solutions.
+            </p>
+            <div class="card-actions">
+              <button class="btn text-white bg-[#2B2A2B]">Read More</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 4th card -->
+        <div
+          class="card"
+          style="
+            width: 100%;
+            max-width: 400px;
+            background-color: #2b2a2b;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+          "
+        >
+          <figure class="px-10 pt-10">
+            <img
+              src="img/c.png"
+              alt="C"
+              style="max-width: 50px; max-height: 50px"
+            />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="text-3xl font-bold">C</h2>
+            <p>
+              Experienced C programmer with a passion for low-level and
+              high-performance coding. Proficient in developing efficient
+              algorithms and data structures. Skilled in software development,
+              debugging, and optimizing applications for optimal performance and
+              reliability.
+            </p>
+            <div class="card-actions">
+              <button class="btn text-white bg-[#2B2A2B]">Read More</button>
+            </div>
+          </div>
+        </div>
+        <!-- 5th card -->
+        <div
+          class="card"
+          style="
+            width: 100%;
+            max-width: 400px;
+            background-color: #2b2a2b;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+          "
+        >
+          <figure class="px-10 pt-10">
+            <img
+              src="img/html.png"
+              alt="HTML"
+              style="max-width: 50px; max-height: 50px"
+            />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="text-3xl font-bold">HTML</h2>
+            <p>
+              Experienced HTML developer adept at crafting web content and
+              interfaces. Proficient in using HTML tags and elements to create
+              user-friendly and visually engaging websites. Passionate about
+              staying updated on web standards and delivering exceptional user
+              experiences.
+            </p>
+            <div class="card-actions">
+              <button class="btn text-white bg-[#2B2A2B]">Read More</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 6th card -->
+        <div
+          class="card"
+          style="
+            width: 100%;
+            max-width: 400px;
+            background-color: #2b2a2b;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+          "
+        >
+          <figure class="px-10 pt-10">
+            <img
+              src="img/CSS.png"
+              alt="CSS"
+              style="max-width: 50px; max-height: 50px"
+            />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="text-3xl font-bold">CSS</h2>
+            <p>
+              I provide CSS services tailored to your needs, ensuring 
+              visually appealing and responsive web designs. With 
+              expertise in layout, styling, and animation, I create 
+              engaging user experiences for your website or application.
+            </p>
+            <div class="card-actions">
+              <button class="btn text-white bg-[#2B2A2B]">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-</main>
-<footer  class="footer footer-center p-10 bg-[#000000] text-white text-base-content rounded ">
-    <!-- <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded"> -->
-    <div class="grid grid-flow-col gap-4">
+    <!-- contact section -->
+    <section class="p-20 bg-[#181508]" id="ContactSection">
+      <div class="flex justify-around flex-col md:flex-col lg:flex-row">
+        <div class="text-white space-y-4" style="margin: 100px">
+          <h2 class="text-3xl font-bold">
+            Contact <span class="text-[#FF5733]">Me!</span>
+          </h2>
+          <p class="text-2xl font font-medium">
+            If You Have Any Project In Your Mind
+          </p>
+          <p>
+            I'm a flutter developer creating best Application & brave <br />
+            interface for you.
+          </p>
+          <p class="text-sm">01781641350</p>
+          <p>bappy15-5656@diu.edu.bd</p>
+
+          <div class="gap-4 space-x-5" style="display: inline-flex">
+            <a
+              href="https://www.facebook.com/mdsohanurrahman.bappy.9?mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <i class="fab fa-facebook fa-2x"></i
+            ></a>
+
+            <a href="https://t.me/mdbappy21" target="_blank">
+              <i class="fa-brands fa-telegram fa-2x"></i>
+            </a>
+
+            <a href="https://wa.link/c79zkw" target="_blank">
+              <i class="fa-brands fa-whatsapp fa-2x"></i
+            ></a>
+
+            <a href="mailto:bappy15-5656@diu.edu.bd" target="_blank">
+              <i class="fa-solid fa-envelope fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <div class="space-y-8">
+          <h2
+            class="text-2xl font-bold text-white"
+            style="text-align: left; padding: 20px"
+          >
+            Ask me any question?
+          </h2>
+
+          <div class="flex-col space-y-7">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
+              style="color: white"
+            />
+            <br />
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
+              style="color: white"
+            />
+            <br />
+            <input
+              type="text"
+              placeholder="Your Phonre Number "
+              class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
+              style="color: white"
+            />
+            <textarea
+              name=""
+              id=""
+              cols="60"
+              rows="10"
+              placeholder="How can i help you?"
+              class="bg-[#2B2A2B]"
+              style="color: white"
+            ></textarea>
+          </div>
+          <button class="btn bg-[#FF5733] text-white">Send Messaage</button>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="footer footer-center p-10 bg-[#000000] text-white text-base-content rounded"
+    >
+      <!-- <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded"> -->
+      <div class="grid grid-flow-col gap-4">
         <a class="link link-hover">About us</a>
         <a class="link link-hover">Contact</a>
         <a class="link link-hover">Jobs</a>
-    </div>
-    <div>
+      </div>
+      <div>
         <div class="grid grid-flow-col gap-4">
-            <a href="https://www.facebook.com/mdsohanurrahman.bappy.9?mibextid=ZbWKwL" target="_blank"> <i class="fab fa-facebook fa-2x"></i></a>
+          <a
+            href="https://www.facebook.com/mdsohanurrahman.bappy.9?mibextid=ZbWKwL"
+            target="_blank"
+          >
+            <i class="fab fa-facebook fa-2x"></i
+          ></a>
 
-            <a href="https://t.me/mdbappy21" target="_blank">  <i class="fa-brands fa-telegram fa-2x"></i> </a>
+          <a href="https://t.me/mdbappy21" target="_blank">
+            <i class="fa-brands fa-telegram fa-2x"></i>
+          </a>
 
-            <a href="https://wa.link/c79zkw" target="_blank"> <i class="fa-brands fa-whatsapp fa-2x"></i></a>
+          <a href="https://wa.link/c79zkw" target="_blank">
+            <i class="fa-brands fa-whatsapp fa-2x"></i
+          ></a>
 
-            <a href="mailto:bappy15-5656@diu.edu.bd" target="_blank"> <i class="fa-solid fa-envelope fa-2x"></i> </a>
+          <a href="mailto:bappy15-5656@diu.edu.bd" target="_blank">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+          </a>
         </div>
-    </div>
-    <div>
+      </div>
+      <div>
         <p>Copyright © 2023 - All right reserved by Md Bappy</p>
-    </div>
-    <!-- </footer> -->
-</footer>
-</body>
+      </div>
+      <!-- </footer> -->
+    </footer>
+  </body>
 </html>
