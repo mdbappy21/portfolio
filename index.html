@@ -464,7 +464,7 @@
               style="color: white"
             ></textarea>
           </div>
-          <button class="btn bg-[#FF5733] text-white">Send Messaage</button>
+          <button class="btn bg-[#FF5733] text-white" id="sendEmailButton">Send Messaage</button>
         </div>
       </div>
     </section>
@@ -505,5 +505,11 @@
       </div>
       <!-- </footer> -->
     </footer>
+
+    <script>
+      document.getElementById("sendEmailButton").addEventListener("click", function() {
+          window.location.href = "mailto:mdbappy1350@gmail.com?subject=Your%20Subject&body=Your%20message%20here";
+      });
+      </script>
   </body>
 </html>
