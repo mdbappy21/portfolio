@@ -1,83 +1,59 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <title>BAPPY's portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- font awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>BAPPY's portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <body class="">
-    <header style="width: 100%; background-color: #000000; color: white">
-      <!-- navber -->
-      <nav>
-        <div class="navbar bg-[#000000] text-white">
-          <div class="flex-1">
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a href="index.html">Home</a></li>
-                <li class="hide-on-small-screen"><a href="#">Portfolio</a></li>
-                <li><a href="" target="_self">Knowledge</a></li>
-                <li><a href="" target="_self">Contact</a></li>
-              </ul>
-            </div>
-            <a class="btn btn-ghost normal-case text-3xl"
-              >Bappy's <span class="text-[#FF5733]">Portfolio</span></a
-            >
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li class="text-[#FF5733]"><a href="index.html">Home</a></li>
+  <!-- font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="">
+  <header style="width: 100%; background-color: #000000; color: white">
+    <!-- navber -->
+    <nav>
+      <div class="navbar bg-[#000000] text-white">
+        <div class="flex-1">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="index.html">Home</a></li>
               <li><a href="#aboutSection">About</a></li>
-              <li><a href="#ServiceSection" target="_self">Knowledge</a></li>
+              <li><a href="#skillsSection" target="_self">Skills</a></li>
+              <li><a href="#projectsSection" target="_self">Projects</a></li>
               <li><a href="#ContactSection" target="_self">Contact</a></li>
             </ul>
           </div>
-          <div class=""></div>
+          <a class="btn btn-ghost normal-case text-3xl">Bappy's <span class="text-[#FF5733]">Portfolio</span></a>
         </div>
-      </nav>
-      <!-- banner -->
-      <div style="background-image: url('img/Bg6.jpg');background-repeat: no-repeat;background-size: cover;">
-        <div class="hero min-h-screen">
-          <div class="hero-content flex-col lg:flex-row-reverse">
-            <img
-              src="img/bappy.jpg"
-              alt="Round Picture"
-              class="max-w-sm rounded-lg shadow-2xl"
-              style="
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-[#FF5733]"><a href="index.html">Home</a></li>
+            <li><a href="#aboutSection">About</a></li>
+            <li><a href="#skillsSection" target="_self">Skills</a></li>
+            <li><a href="#projectsSection" target="_self">Projects</a></li>
+            <li><a href="#ContactSection" target="_self">Contact</a></li>
+          </ul>
+        </div>
+        <div class=""></div>
+      </div>
+    </nav>
+    <!-- banner -->
+    <div style="background-image: url('img/Bg6.jpg');background-repeat: no-repeat;background-size: cover;">
+      <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src="img/bappy.jpg" alt="Round Picture" class="max-w-sm rounded-lg shadow-2xl" style="
                 margin-left: 100px;
                 border-radius: 50%;
                 width: 200px;
@@ -86,42 +62,38 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-              "
-            />
-            <div>
-              <h1 class="text-xl font-bold text-white">
-                <span class="bg-[] rounded-md">Hello</span> I'm <br />
-                <span class="text-5xl font font-extrabold">Md Bappy</span>
-              </h1>
-              <h1 class="text5xl font-bold text-white">
-                Flutter Developer
-              </h1>
-              <p class="py-6 text-white">
-                A pationate Computer Science and Engineering student at <br />
-                Daffodil International University . I Always search for new
-                <br />knowladge based on programming and devolopment .
-              </p>
-              <!-- <button class="btn bg-[#FF5733] text-white">Say Hello</button> -->
-            </div>
+              " />
+          <div>
+            <h1 class="text-xl font-bold text-white">
+              <span class="bg-[] rounded-md">Hello</span> I'm <br />
+              <span class="text-5xl font font-extrabold">Md Bappy</span>
+            </h1>
+            <h1 class="text5xl font-bold text-white">
+              Flutter Developer
+            </h1>
+            <p class="py-6 text-white text-justify">
+              A Computer Science and Engineering graduate from Daffodil International University,
+              specializing in Flutter for building high-performance, cross-platform mobile
+              applications. I continuously explore modern technologies to improve my development
+              skills.
+            </p>
+            <!-- <button class="btn bg-[#FF5733] text-white">Say Hello</button> -->
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main class="bg-[#2E2F32]">
-      <!-- about me section -->
-      <section id="aboutSection" style="
+  <main class="bg-[#2E2F32]">
+    <!-- about me section -->
+    <section id="aboutSection" style="
           background-image: url('img/Bg.jpg');
           background-repeat: no-repeat;
           background-size: cover;
-        " >
-        <div class="hero min-h-screen">
-          <div class="hero-content flex-col lg:flex-row">
-            <img
-              src="img/img4.jpg"
-              alt="Round Picture"
-              class="max-w-sm rounded-lg shadow-2xl"
-              style="
+        ">
+      <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="img/img4.jpg" alt="Round Picture" class="max-w-sm rounded-lg shadow-2xl" style="
                 margin-right: 50px;
                 border-radius: 50%;
                 width: 1806px !important;
@@ -130,432 +102,431 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-              "
-            />
-            <div class="space-y-5">
-              <h1 class="text-5xl font-bold text-white">
-                About <span class="text-[#FF5733]">Me</span>
-              </h1>
-              <h2 class="text-3xl font-bold text-white">Flutter Developer</h2>
-              <p class="py-6 text-white">
-                As a seasoned Flutter developer, I specialize in crafting sleek
-                and performant cross-platform applications. With a keen eye for
-                UI/UX design and a knack for optimizing code, I thrive in
-                creating seamless user experiences across mobile, web, and
-                desktop platforms. Passionate about staying abreast of the
-                latest Flutter advancements, I am dedicated to delivering
-                top-notch solutions that exceed client expectations. My
-                proficiency in C, C++, and Java enables versatile software
-                development across domains, empowering me to tackle projects
-                comprehensively and deliver high-quality solutions efficiently.
+              " />
+          <div class="space-y-2 max-w-2xl">
+            <h1 class="text-5xl font-bold text-white">
+              About <span class="text-[#FF5733]">Me</span>
+            </h1>
+
+            <h2 class="text-3xl font-bold text-white">Flutter Developer</h2>
+
+            <!-- Summary -->
+            <p class="py-1 text-white text-justify">
+              I am a Flutter developer and a Computer Science and Engineering graduate
+              from Daffodil International University with a strong background in software
+              development and mobile application design. My primary focus is building
+              scalable, high-performance cross-platform applications with clean
+              architecture and maintainable code.
+            </p>
+
+            <!-- Expanded Details -->
+            <div id="moreAbout" class="hidden space-y-2 text-white text-justify">
+              <p>
+                I have hands-on experience developing applications using Flutter and Dart,
+                integrating Firebase services, working with REST APIs, and implementing
+                modern state management solutions. I follow best practices such as modular
+                code structure, reusable components, and performance optimization.
               </p>
-              <button class="btn bg-[#0c2e2b] text-white">More About</button>
+
+              <p>
+                I place strong emphasis on user experience, ensuring applications are
+                responsive, intuitive, and visually consistent across different devices
+                and platforms. I enjoy collaborating with designers and translating UI/UX
+                concepts into functional and polished applications.
+              </p>
+
+              <p>
+                In addition to mobile development, my academic background has given me a
+                solid understanding of object-oriented programming, data structures, and
+                problem-solving using languages such as C, C++, and Python. This allows me
+                to approach development challenges with a strong technical foundation.
+              </p>
+
+              <p>
+                I am highly motivated to continuously learn and adapt to new technologies.
+                I actively work on personal and academic projects to refine my skills and
+                aim to contribute to teams where quality, efficiency, and growth are
+                valued.
+              </p>
+            </div>
+
+            <!-- Toggle Button -->
+            <button id="toggleBtn" class="btn bg-[#0c2e2b] text-white" onclick="toggleAbout()">
+              Read More
+            </button>
+          </div>
+
+          <script>
+            function toggleAbout() {
+              const content = document.getElementById("moreAbout");
+              const btn = document.getElementById("toggleBtn");
+
+              content.classList.toggle("hidden");
+              btn.textContent = content.classList.contains("hidden")
+                ? "Read More"
+                : "Read Less";
+            }
+          </script>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Skills Section -->
+  <section id="skillsSection" style="
+    background-image: url('img/Bg5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  ">
+    <h2 class="text-4xl font-bold text-white mb-10">
+      <span class="text-[#FF5733]">My</span> Skills
+    </h2>
+
+    <div class="grid gap-6 w-full max-w-7xl
+            [grid-template-columns:repeat(auto-fit,minmax(240px,1fr))]">
+
+      <!-- Flutter -->
+      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
+        <img src="img/flutter.png" alt="Flutter" class="mx-auto w-12 mb-4" />
+        <h3 class="text-2xl font-bold text-center mb-2">Flutter</h3>
+        <p class="text-justify">
+          My primary framework for building scalable, high-performance
+          cross-platform mobile applications with clean UI and architecture.
+        </p>
+      </div>
+
+      <!-- Dart -->
+      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
+        <img src="img/Dart.png" alt="Dart" class="mx-auto w-12 mb-4" />
+        <h3 class="text-2xl font-bold text-center mb-2">Dart</h3>
+        <p class="text-justify">
+          The core language I use with Flutter to write efficient, structured,
+          and maintainable application logic.
+        </p>
+      </div>
+
+      <!-- Python -->
+      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
+        <img src="img/Python.png" alt="Python" class="mx-auto w-12 mb-4" />
+        <h3 class="text-2xl font-bold text-center mb-2">
+          Python <span class="text-sm font-normal">(Beginner)</span>
+        </h3>
+        <p class="text-justify">
+          Currently learning Python for problem-solving, scripting, and backend
+          fundamentals with a focus on clean and readable code.
+        </p>
+      </div>
+
+      <!-- Java -->
+      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
+        <img src="img/java.svg" alt="Java" class="mx-auto w-12 mb-4" />
+        <h3 class="text-2xl font-bold text-center mb-2">Java</h3>
+        <p class="text-justify">
+          Strengthened my understanding of object-oriented programming and
+          structured software development.
+        </p>
+      </div>
+
+      <!-- C -->
+      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
+        <img src="img/c.png" alt="C" class="mx-auto w-12 mb-4" />
+        <h3 class="text-2xl font-bold text-center mb-2">C</h3>
+        <p class="text-justify">
+          Built a strong foundation in programming fundamentals, memory
+          management, and logical problem-solving.
+        </p>
+      </div>
+
+      <!-- Git -->
+      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
+        <img src="img/git.png" alt="Git" class="mx-auto w-12 mb-4" />
+        <h3 class="text-2xl font-bold text-center mb-2">Git</h3>
+        <p class="text-justify">
+          Used for version control, code management, and collaboration in
+          personal and team-based projects.
+        </p>
+      </div>
+
+      <!-- Firebase -->
+      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
+        <img src="img/firebase.png" alt="Firebase" class="mx-auto w-12 mb-4" />
+        <h3 class="text-2xl font-bold text-center mb-2">Firebase</h3>
+        <p class="text-justify">
+          Implemented authentication, real-time database, and backend services
+          for Flutter applications.
+        </p>
+      </div>
+
+      <!-- State Management -->
+      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
+        <img src="img/state.png" alt="State Management" class="mx-auto w-12 mb-4" />
+        <h3 class="text-2xl font-bold text-center mb-2">
+          State Management
+        </h3>
+        <p class="text-justify">
+          Applied state management techniques in Flutter to build scalable and
+          maintainable application architectures.
+        </p>
+      </div>
+
+      <!-- SQLite -->
+      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
+        <img src="img/sqlite.png" alt="SQLite" class="mx-auto w-12 mb-4" />
+        <h3 class="text-2xl font-bold text-center mb-2">SQLite</h3>
+        <p class="text-justify">
+          Used for implementing local data storage and offline-first features in
+          Flutter applications.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projectsSection" style="
+    background-image: url('img/Bg8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  ">
+    <h2 class="text-4xl font-bold text-white mb-10 text-center">
+      <span class="text-[#FF5733]">My</span> Projects
+    </h2>
+
+    <!-- Carousel Wrapper (Centered) -->
+    <div class="relative w-full max-w-5xl overflow-hidden">
+
+      <!-- Slides Container -->
+      <div id="projectCarousel" class="flex transition-transform duration-500 ease-in-out"
+        style="transform: translateX(0%);">
+
+        <!-- Slide 1 -->
+        <div class="min-w-full flex justify-center">
+          <div class="card bg-[#01010] text-white shadow-xl w-full max-w-3xl">
+            <img src="img/project1.png" alt="DIU CGPA" />
+            <div class="card-body">
+              <h3 class="card-title text-2xl">DIU CGPA</h3>
+              <p>
+                A Flutter application designed for Daffodil International University
+                students to calculate CGPA with detailed semester-wise results.
+              </p>
+              <p class="text-sm text-gray-300">
+                Flutter • Dart • Api integration • Firebase Cloud Messaaging • Local Storage
+              </p>
+              <div class="card-actions mt-4 gap-3">
+                <a href="https://play.google.com/store/apps/details?id=com.deepcore.diu_cgpa" target="_blank"
+                  class="btn btn-sm bg-[#0c2e2b] text-white">Playstore</a>
+                <a href="" class="btn btn-sm btn-outline text-white">Demo</a>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <!-- knowledge section -->
-    <section
-      id="ServiceSection"
-      style="
-        background-image: url('img/Bg5.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      "
-    >
-      <p class="text-4xl font-bold text-white">
-        <span class="text-[#FF5733]">My</span> Knowledge
-      </p>
-      <div class="flex flex-wrap justify-center pt-10">
-        <!-- 1st card -->
-        <div
-          class="card"
-          style="
-            width: 100%;
-            max-width: 400px;
-            background-color: #2b2a2b;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: white;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 20px;
-          "
-        >
-          <figure class="px-10 pt-10">
-            <img
-              src="img/flutter.png"
-              alt="Flutter"
-              style="max-width: 50px; max-height: 50px"
-            />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="text-3xl font-bold">Flutter</h2>
-            <p>
-              As an experienced Flutter developer, I leverage this powerful
-              UI toolkit by Google to build natively compiled applications
-              for mobile, web, and desktop from a single codebase.
-            </p>
+
+        <!-- Slide 2 -->
+        <div class="min-w-full flex justify-center">
+          <div class="card bg-[#01010] text-white shadow-xl w-full max-w-3xl">
+            <img src="img/project2.png" alt="Prayer Times" />
+            <div class="card-body">
+              <h3 class="card-title text-2xl">Prayer Times</h3>
+              <p>
+                A Flutter application that provides accurate prayer times, Qibla
+                direction, and location-based Islamic utilities.
+              </p>
+              <p class="text-sm text-gray-300">
+                Flutter • APIs • Location Services
+              </p>
+              <div class="card-actions mt-4 gap-3">
+                <a href="https://github.com/mdbappy21/prayer_times" target="_blank"
+                  class="btn btn-sm bg-[#0c2e2b] text-white">GitHub</a>
+                <a href="" class="btn btn-sm btn-outline text-white">Demo</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- 2nd card -->
-        <div
-          class="card"
-          style="
-            width: 100%;
-            max-width: 400px;
-            background-color: #2b2a2b;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: white;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 20px;
-          "
-        >
-          <figure class="px-10 pt-10">
-            <img
-              src="img/Dart.png"
-              alt="dart"
-              style="max-width: 50px; max-height: 50px"
-            />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="text-3xl font-bold">Dart</h2>
-            <p>
-              As someone intimately acquainted with Dart, I adeptly utilize
-              its features to write clean, efficient, and expressive code
-              for Flutter development projects.
-            </p>
+        <!-- Slide 3 -->
+        <div class="min-w-full flex justify-center">
+          <div class="card bg-[#01010] text-white shadow-xl w-full max-w-3xl">
+            <img src="img/project3.png" alt="Meal Management System" />
+            <div class="card-body">
+              <h3 class="card-title text-2xl">Meal Management System</h3>
+              <p>
+                A Flutter-based system for managing daily meals, expenses, and member
+                balances with role-based access.
+              </p>
+              <p class="text-sm text-gray-300">
+                Flutter • Firebase • Api Integration
+              </p>
+              <div class="card-actions mt-4 gap-3">
+                <a href="https://github.com/mdbappy21/meal_management" target="_blank"
+                  class="btn btn-sm bg-[#0c2e2b] text-white">GitHub</a>
+                <a href="" class="btn btn-sm btn-outline text-white">Demo</a>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- 3rd card -->
-        <div
-                class="card"
-                style="
-            width: 100%;
-            max-width: 400px;
-            background-color: #2b2a2b;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: white;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 20px;
-          "
-        >
-          <figure class="px-10 pt-10">
-            <img
-                    src="img/Python.png"
-                    alt="python"
-                    style="max-width: 50px; max-height: 50px"
-            />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="text-3xl font-bold">Python</h2>
-            <p>
-              Python stands as my trusted companion in coding journeys,
-              offering elegance, versatility, and efficiency in crafting
-              diverse software solutions.
-            </p>
+
+        <!-- Slide 4 -->
+        <div class="min-w-full flex justify-center">
+          <div class="card bg-[#01010] text-white shadow-xl w-full max-w-3xl">
+            <img src="img/project4.png" alt="Smart Car Parking System" />
+            <div class="card-body">
+              <h3 class="card-title text-2xl">Smart Car Parking System</h3>
+              <p>
+                A smart parking solution built with Flutter, enabling real-time parking
+                slot monitoring and reservation using IoT and backend services.
+              </p>
+              <p class="text-sm text-gray-300">
+                Flutter • Firebase • IoT Integration
+              </p>
+              <div class="card-actions mt-4 gap-3">
+                <a href="https://github.com/mdbappy21/smart_car_parking" target="_blank"
+                  class="btn btn-sm bg-[#0c2e2b] text-white">GitHub</a>
+                <a href="" class="btn btn-sm btn-outline text-white">Demo</a>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- 4th card -->
-        <div
-          class="card"
-          style="
-            width: 100%;
-            max-width: 400px;
-            background-color: #2b2a2b;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: white;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 20px;
-          "
-        >
-          <figure class="px-10 pt-10">
-            <img
-              src="img/java.svg"
-              alt="Java"
-              style="max-width: 50px; max-height: 50px"
-            />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="text-3xl font-bold">Java</h2>
-            <p>
-              Java embodies reliability and scalability, serving as a cornerstone
-              in developing robust, enterprise-level applications across various
-              platforms and industries.
-            </p>
+
+        <!-- Slide 5 -->
+        <div class="min-w-full flex justify-center">
+          <div class="card bg-[#01010] text-white shadow-xl w-full max-w-3xl">
+            <img src="img/project5.png" alt="Weather App" />
+            <div class="card-body">
+              <h3 class="card-title text-2xl">Weather App</h3>
+              <p>
+                A Flutter weather application that displays real-time weather conditions
+                and forecasts based on user location.
+              </p>
+              <p class="text-sm text-gray-300">
+                Flutter • REST API
+              </p>
+              <div class="card-actions mt-4 gap-3">
+                <a href="https://github.com/mdbappy21/weather_app" target="_blank"
+                  class="btn btn-sm bg-[#0c2e2b] text-white">GitHub</a>
+                <a href="" class="btn btn-sm btn-outline text-white">Demo</a>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <!-- 5th card -->
-        <div
-          class="card"
-          style="
-            width: 100%;
-            max-width: 400px;
-            background-color: #2b2a2b;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: white;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 20px;
-          "
-        >
-          <figure class="px-10 pt-10">
-            <img
-              src="img/c.png"
-              alt="C"
-              style="max-width: 50px; max-height: 50px"
-            />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="text-3xl font-bold">C</h2>
-            <p>
-              C is the bedrock of programming, revered for its efficiency,
-              portability, and foundational role in shaping modern computing
-              landscapes.
-            </p>
-          </div>
-        </div>
-        <!-- 6th card -->
-        <div class="card" style="
-            width: 100%;
-            max-width: 400px;
-            background-color: #2b2a2b;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: white;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 20px;
-          ">
-          <figure class="px-10 pt-10">
-            <img src="img/cpp.png" alt="CPP" style="max-width: 50px; max-height: 50px"/>
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="text-3xl font-bold">CPP</h2>
-            <p>
-              C++ is a formidable force, renowned for its blend of high
-              performance and versatility, empowering developers to create
-              complex software systems with finesse and efficiency.
-            </p>
-          </div>
-        </div>
-        <!-- 7th card -->
-        <div
-          class="card"
-          style="
-            width: 100%;
-            max-width: 400px;
-            background-color: #2b2a2b;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: white;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 20px;
-          "
-        >
-          <figure class="px-10 pt-10">
-            <img
-              src="img/html.png"
-              alt="HTML"
-              style="max-width: 50px; max-height: 50px"
-            />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="text-3xl font-bold">HTML</h2>
-            <p>
-              The backbone of the web, empowers me to structure and design
-              engaging digital experiences with its simplicity and versatility.
-            </p>
-          </div>
-        </div>
-        
-        <!-- 8th card -->
-        <div
-          class="card"
-          style="
-            width: 100%;
-            max-width: 400px;
-            background-color: #2b2a2b;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: white;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 20px;
-          "
-        >
-          <figure class="px-10 pt-10">
-            <img
-              src="img/CSS.png"
-              alt="CSS"
-              style="max-width: 50px; max-height: 50px"
-            />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="text-3xl font-bold">CSS</h2>
-            <p>
-              The styling wizard of the web, allows me to breathe life into HTML,
-              shaping beautiful and responsive designs that captivate users
-              across devices and screens.
-            </p>
-          </div>
-        </div>
-        <!-- 9th card -->
-        <div class="card" style="
-            width: 100%;
-            max-width: 400px;
-            background-color: #2b2a2b;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: white;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 20px;
-          ">
-          <figure class="px-10 pt-10">
-            <img src="img/git.png" alt="Git" style="max-width: 50px; max-height: 50px"/>
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="text-3xl font-bold">Git</h2>
-            <p>
-              Git, the cornerstone of collaborative coding, empowers me to manage
-              and track changes efficiently, ensuring seamless teamwork and
-              version control in software development projects.
-            </p>
-          </div>
-        </div>
+
       </div>
-    </section>
 
-    <!-- contact section -->
-    <section class="p-20" id="ContactSection" style="background-image: url('img/Bg7.png');background-repeat: no-repeat;background-size: cover;" >
-      <div class="flex justify-around flex-col md:flex-col lg:flex-row">
-        <div class="text-white space-y-4" style="margin: 100px">
-          <h2 class="text-3xl font-bold">
-            Contact <span class="text-[#FF5733]">Me!</span>
-          </h2>
-          <p class="text-2xl font font-medium">
-            If You Have Any Project In Your Mind Hire me!
-          </p>
-          <p>
-            I'm a flutter developer creating best Application & brave <br />
-            interface for you.
-          </p>
-          <p class="text-sm">01781641350</p>
-          <p>bappy15-5656@diu.edu.bd</p>
+      <!-- Navigation Buttons -->
+      <button class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2" onclick="prevProject()">
+        ❮
+      </button>
 
-          <div class="gap-4 space-x-5" style="display: inline-flex">
-            <a
-              href="https://www.facebook.com/mdsohanurrahman.bappy.9?mibextid=ZbWKwL"
-              target="_blank"
-            >
-              <i class="fab fa-facebook fa-2x"></i
-            ></a>
+      <button class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2" onclick="nextProject()">
+        ❯
+      </button>
 
-            <a href="https://t.me/mdbappy21" target="_blank">
-              <i class="fa-brands fa-telegram fa-2x"></i>
-            </a>
+      <!-- Indicators -->
+      <div id="projectIndicators" class="flex justify-center gap-2 mt-6"></div>
+    </div>
+  </section>
 
-            <a href="https://wa.link/c79zkw" target="_blank">
-              <i class="fa-brands fa-whatsapp fa-2x"></i
-            ></a>
 
-            <a href="mailto:bappy15-5656@diu.edu.bd" target="_blank">
-              <i class="fa-solid fa-envelope fa-2x"></i>
-            </a>
-          </div>
-        </div>
-        <div class="space-y-8">
-          <h2
-            class="text-2xl font-bold text-white"
-            style="text-align: left; padding: 20px"
-          >
-            Ask me any question?
-          </h2>
+  <!-- contact section -->
+  <section class="p-20" id="ContactSection"
+    style="background-image: url('img/Bg7.png');background-repeat: no-repeat;background-size: cover;">
+    <div class="flex justify-around flex-col md:flex-col lg:flex-row">
+      <div class="text-white space-y-4" style="margin: 100px">
+        <h2 class="text-3xl font-bold">
+          Contact <span class="text-[#FF5733]">Me!</span>
+        </h2>
+        <p class="text-2xl font font-medium">
+          If You Have Any Project In Your Mind Hire me!
+        </p>
+        <p>
+          I'm a flutter developer creating best Application & brave <br />
+          interface for you.
+        </p>
+        <p>mdbappy21.cse@gmail.com</p>
 
-          <div class="flex-col space-y-7">
-            <input
-              type="text"
-              placeholder="Your Name"
-              class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
-              style="color: white"
-            />
-            <br />
-            <input
-              type="email"
-              placeholder="Your Email Address"
-              class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
-              style="color: white"
-            />
-            <br />
-            <input
-              type="text"
-              placeholder="Your Phonre Number "
-              class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
-              style="color: white"
-            />
-            <textarea
-              name=""
-              id=""
-              cols="60"
-              rows="10"
-              placeholder="How can i help you?"
-              class="bg-[#2B2A2B]"
-              style="color: white"
-            ></textarea>
-          </div>
-          <button class="btn bg-[#0c2e2b] text-white" id="sendEmailButton">Send Messaage</button>
-        </div>
-      </div>
-    </section>
-
-    <footer
-      class="footer footer-center p-10 bg-[#000000] text-white text-base-content rounded"
-    >
-      <!-- <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded"> -->
-      <div class="grid grid-flow-col gap-4">
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-      </div>
-      <div>
-        <div class="grid grid-flow-col gap-4">
-          <a
-            href="https://www.facebook.com/mdsohanurrahman.bappy.9?mibextid=ZbWKwL"
-            target="_blank"
-          >
-            <i class="fab fa-facebook fa-2x"></i
-          ></a>
+        <div class="gap-4 space-x-5" style="display: inline-flex">
+          <a href="https://www.facebook.com/mdsohanurrahman.bappy.9?mibextid=ZbWKwL" target="_blank">
+            <i class="fab fa-facebook fa-2x"></i></a>
 
           <a href="https://t.me/mdbappy21" target="_blank">
             <i class="fa-brands fa-telegram fa-2x"></i>
           </a>
 
           <a href="https://wa.link/c79zkw" target="_blank">
-            <i class="fa-brands fa-whatsapp fa-2x"></i
-          ></a>
+            <i class="fa-brands fa-whatsapp fa-2x"></i></a>
 
-          <a href="mailto:bappy15-5656@diu.edu.bd" target="_blank">
+          <a href="mailto:mdbappy21.cse@gmail.com" target="_blank">
             <i class="fa-solid fa-envelope fa-2x"></i>
           </a>
         </div>
       </div>
-      <div>
-        <p>Copyright © 2023 - All right reserved by Md Bappy</p>
-      </div>
-      <!-- </footer> -->
-    </footer>
+      <div class="space-y-8">
+        <h2 class="text-2xl font-bold text-white" style="text-align: left; padding: 20px">
+          Ask me any question?
+        </h2>
 
-    <script>
-      document.getElementById("sendEmailButton").addEventListener("click", function() {
-          window.location.href = "mailto:mdbappy1350@gmail.com?subject=Your%20Subject&body=Your%20message%20here";
-      });
-      </script>
-  </body>
+        <div class="flex-col space-y-7">
+          <input type="text" placeholder="Your Name" class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
+            style="color: white" />
+          <br />
+          <input type="email" placeholder="Your Email Address" class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
+            style="color: white" />
+          <br />
+          <input type="text" placeholder="Your Phonre Number " class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
+            style="color: white" />
+          <textarea name="" id="" cols="60" rows="10" placeholder="How can i help you?" class="bg-[#2B2A2B]"
+            style="color: white"></textarea>
+        </div>
+        <button class="btn bg-[#0c2e2b] text-white" id="sendEmailButton">Send Messaage</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer footer-center p-10 bg-[#000000] text-white text-base-content rounded">
+    <!-- <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded"> -->
+    <div class="grid grid-flow-col gap-4">
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+    </div>
+    <div>
+      <div class="grid grid-flow-col gap-4">
+        <a href="https://www.facebook.com/mdsohanurrahman.bappy.9?mibextid=ZbWKwL" target="_blank">
+          <i class="fab fa-facebook fa-2x"></i></a>
+
+        <a href="https://t.me/mdbappy21" target="_blank">
+          <i class="fa-brands fa-telegram fa-2x"></i>
+        </a>
+
+        <a href="https://wa.link/c79zkw" target="_blank">
+          <i class="fa-brands fa-whatsapp fa-2x"></i></a>
+
+        <a href="mailto:mdbappy21.cse@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope fa-2x"></i>
+        </a>
+      </div>
+    </div>
+    <div>
+      <p>Copyright © 2026 - All right reserved by Md Bappy</p>
+    </div>
+    <!-- </footer> -->
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="btn btn-circle bg-[#0c2e2b] text-white fixed bottom-6 right-6 hidden shadow-lg"
+    aria-label="Back to top">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+
+</body>
 </html>

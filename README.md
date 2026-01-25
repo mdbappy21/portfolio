@@ -1,2 +1,2 @@
 # portfolio
-https://mdbappy21.github.io/portfolio/
+https://bappyportfolio.netlify.app
