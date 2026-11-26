@@ -2,531 +2,589 @@
 <html lang="en" data-theme="dark">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>BAPPY's portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description"
+    content="Md Bappy is a Flutter developer and software engineer building practical Android applications and digital products. Explore his apps and projects.">
+  <meta property="og:title" content="Md Bappy | Flutter Developer">
+  <meta property="og:description"
+    content="Building useful apps for everyday life. Explore apps and projects by Md Bappy.">
+  <meta property="og:type" content="website">
+  <title>Md Bappy — Flutter Developer & App Builder</title>
+  <link rel="icon" type="image/jpeg" href="img/bappy.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- font awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="">
-  <header style="width: 100%; background-color: #000000; color: white">
-    <!-- navber -->
-    <nav>
-      <div class="navbar bg-[#000000] text-white">
-        <div class="flex-1">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#aboutSection">About</a></li>
-              <li><a href="#skillsSection" target="_self">Skills</a></li>
-              <li><a href="#projectsSection" target="_self">Projects</a></li>
-              <li><a href="#ContactSection" target="_self">Contact</a></li>
-            </ul>
-          </div>
-          <a class="btn btn-ghost normal-case text-3xl">Bappy's <span class="text-[#FF5733]">Portfolio</span></a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li class="text-[#FF5733]"><a href="index.html">Home</a></li>
-            <li><a href="#aboutSection">About</a></li>
-            <li><a href="#skillsSection" target="_self">Skills</a></li>
-            <li><a href="#projectsSection" target="_self">Projects</a></li>
-            <li><a href="#ContactSection" target="_self">Contact</a></li>
-          </ul>
-        </div>
-        <div class=""></div>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <nav class="navbar shell" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Md Bappy home"><span class="brand-mark">B</span><span>md<span
+            class="accent">bappy</span><small>.dev</small></span></a>
+      <div class="desktop-nav">
+        <a href="#home" class="nav-link active">Home</a><a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a><a href="#apps" class="nav-link">Apps</a>
+        <a href="#projects" class="nav-link">Projects</a><a href="#contact" class="nav-link nav-cta">Let's talk <i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a>
       </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation" aria-expanded="false"><i
+          class="fa-solid fa-bars"></i></button>
     </nav>
-    <!-- banner -->
-    <div style="background-image: url('img/Bg6.jpg');background-repeat: no-repeat;background-size: cover;">
-      <div class="hero min-h-screen">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-          <img src="img/bappy.jpg" alt="Round Picture" class="max-w-sm rounded-lg shadow-2xl" style="
-                margin-left: 100px;
-                border-radius: 50%;
-                width: 200px;
-                height: 200px;
-                overflow: hidden;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-              " />
-          <div>
-            <h1 class="text-xl font-bold text-white">
-              <span class="bg-[] rounded-md">Hello</span> I'm <br />
-              <span class="text-5xl font font-extrabold">Md Bappy</span>
-            </h1>
-            <h1 class="text5xl font-bold text-white">
-              Flutter Developer
-            </h1>
-            <p class="py-6 text-white text-justify">
-              A Computer Science and Engineering graduate from Daffodil International University,
-              specializing in Flutter for building high-performance, cross-platform mobile
-              applications. I continuously explore modern technologies to improve my development
-              skills.
-            </p>
-            <!-- <button class="btn bg-[#FF5733] text-white">Say Hello</button> -->
-          </div>
-        </div>
-      </div>
+    <div class="mobile-nav shell" id="mobileNav">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#apps">Apps</a><a
+        href="#projects">Projects</a><a href="#contact">Contact</a>
     </div>
   </header>
 
-  <main class="bg-[#2E2F32]">
-    <!-- about me section -->
-    <section id="aboutSection" style="
-          background-image: url('img/Bg.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
-        ">
-      <div class="hero min-h-screen">
-        <div class="hero-content flex-col lg:flex-row">
-          <img src="img/img4.jpg" alt="Round Picture" class="max-w-sm rounded-lg shadow-2xl" style="
-                margin-right: 50px;
-                border-radius: 50%;
-                width: 1806px !important;
-                height: 355px !important;
-                overflow: hidden;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-              " />
-          <div class="space-y-2 max-w-2xl">
-            <h1 class="text-5xl font-bold text-white">
-              About <span class="text-[#FF5733]">Me</span>
-            </h1>
+  <main>
+    <section class="hero-section shell" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> FLUTTER DEVELOPER · ANDROID APP BUILDER</div>
+        <h1>Building useful apps<br>for <span class="gradient-text">everyday life.</span></h1>
+        <p class="hero-description">I'm <strong>Md Bappy</strong>, a Flutter developer focused on creating practical,
+          intuitive, and reliable mobile experiences.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#apps">Explore my apps <i
+              class="fa-solid fa-arrow-down"></i></a><a class="button button-quiet" href="#contact">Get in touch <i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="hero-proof">
+          <div class="proof-avatars"><span>B</span><span>F</span><span>D</span></div>
+          <p><strong>12 apps</strong><br><span>published or in progress</span></p>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="profile-frame"><img src="img/bappy.jpg" alt="Portrait of Md Bappy"
+            onerror="this.style.display='none';this.parentElement.classList.add('no-photo')"><span
+            class="fallback-initial">B</span></div>
+        <div class="float-card float-card-top"><span class="float-icon"><i
+              class="fa-solid fa-code"></i></span><span><b>Flutter</b><small>Mobile development</small></span></div>
+        <div class="visual-caption">DESIGN · BUILD · IMPROVE</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
+    </section>
 
-            <h2 class="text-3xl font-bold text-white">Flutter Developer</h2>
-
-            <!-- Summary -->
-            <p class="py-1 text-white text-justify">
-              I am a Flutter developer and a Computer Science and Engineering graduate
-              from Daffodil International University with a strong background in software
-              development and mobile application design. My primary focus is building
-              scalable, high-performance cross-platform applications with clean
-              architecture and maintainable code.
-            </p>
-
-            <!-- Expanded Details -->
-            <div id="moreAbout" class="hidden space-y-2 text-white text-justify">
-              <p>
-                I have hands-on experience developing applications using Flutter and Dart,
-                integrating Firebase services, working with REST APIs, and implementing
-                modern state management solutions. I follow best practices such as modular
-                code structure, reusable components, and performance optimization.
-              </p>
-
-              <p>
-                I place strong emphasis on user experience, ensuring applications are
-                responsive, intuitive, and visually consistent across different devices
-                and platforms. I enjoy collaborating with designers and translating UI/UX
-                concepts into functional and polished applications.
-              </p>
-
-              <p>
-                In addition to mobile development, my academic background has given me a
-                solid understanding of object-oriented programming, data structures, and
-                problem-solving using languages such as C, C++, and Python. This allows me
-                to approach development challenges with a strong technical foundation.
-              </p>
-
-              <p>
-                I am highly motivated to continuously learn and adapt to new technologies.
-                I actively work on personal and academic projects to refine my skills and
-                aim to contribute to teams where quality, efficiency, and growth are
-                valued.
-              </p>
-            </div>
-
-            <!-- Toggle Button -->
-            <button id="toggleBtn" class="btn bg-[#0c2e2b] text-white" onclick="toggleAbout()">
-              Read More
-            </button>
+    <section class="section shell" id="about">
+      <div class="section-kicker">01 / ABOUT</div>
+      <div class="about-layout">
+        <div>
+          <h2 class="section-title">A developer who<br>likes to <span class="gradient-text">make things.</span></h2>
+        </div>
+        <div class="about-content">
+          <p class="lead">I’m a Computer Science and Engineering graduate from Daffodil International University,
+            working primarily with Flutter and Dart.</p>
+          <p>I build Android applications that solve focused, everyday problems—from productivity and personal utilities
+            to education and lifestyle tools. I care about clear interfaces, maintainable code, and making features feel
+            straightforward to use.</p>
+          <p>My development workflow includes local data storage, API integration, Firebase services, and practical
+            state-management patterns. I keep learning, shipping, and improving through real projects.</p>
+          <div class="about-facts">
+            <div><strong>Flutter</strong><span>Primary framework</span></div>
+            <div><strong>Android</strong><span>App publishing</span></div>
+            <div><strong>DIU</strong><span>CSE graduate</span></div>
+            <div><strong>JU</strong><span>CSE Post graduate</span></div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <script>
-            function toggleAbout() {
-              const content = document.getElementById("moreAbout");
-              const btn = document.getElementById("toggleBtn");
+    <section class="section skills-section" id="skills">
+      <div class="shell">
+        <div class="section-kicker">02 / TOOLKIT</div>
+        <div class="section-heading-row">
+          <h2 class="section-title">Tools I work <span class="gradient-text">with.</span></h2>
+          <p>Technologies and foundations I use to turn ideas into working products.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card featured-skill">
+            <div class="skill-icon"><img src="img/flutter.png" alt=""></div>
+            <h3>Flutter</h3>
+            <p>My primary framework for building responsive cross-platform mobile applications.</p><span
+              class="skill-level">PRIMARY</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><img src="img/Dart.png" alt=""></div>
+            <h3>Dart</h3>
+            <p>Application logic, asynchronous programming, and reusable code.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><img src="img/firebase.png" alt=""></div>
+            <h3>Firebase</h3>
+            <p>Backend services and app integrations.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><img src="img/state.png" alt=""></div>
+            <h3>State management</h3>
+            <p>Managing application state and maintainable UI flows.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><img src="img/sqlite.png" alt=""></div>
+            <h3>SQLite</h3>
+            <p>Local storage and offline-first application features.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><img src="img/git.png" alt=""></div>
+            <h3>Git</h3>
+            <p>Version control and source-code management.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><img src="img/java.svg" alt=""></div>
+            <h3>Java</h3>
+            <p>Object-oriented programming and software fundamentals.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><img src="img/c.png" alt=""></div>
+            <h3>C</h3>
+            <p>Programming fundamentals and problem-solving.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><img src="img/Python.png" alt=""></div>
+            <h3>Python</h3>
+            <p>Currently learning for scripting and problem-solving.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><img src="img/androidstudio.png" alt="Android Studio"></div>
+            <h3>Android Studio</h3>
+            <p>My primary IDE for Android development, debugging, and app testing.</p>
+          </article>
 
-              content.classList.toggle("hidden");
-              btn.textContent = content.classList.contains("hidden")
-                ? "Read More"
-                : "Read Less";
-            }
-          </script>
+          <article class="skill-card">
+            <div class="skill-icon"><img src="img/vscode.png" alt="Visual Studio Code"></div>
+            <h3>Visual Studio Code</h3>
+            <p>Used for Flutter development, coding, and project management.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section shell" id="apps">
+      <div class="section-kicker">03 / APPLICATIONS</div>
+
+      <div class="section-heading-row apps-heading">
+        <div>
+          <h2 class="section-title">
+            Small tools.<br>
+            <span class="gradient-text">Real-life utility.</span>
+          </h2>
+        </div>
+        <p>A growing collection of Android apps designed to make everyday tasks simpler.</p>
+      </div>
+
+      <div class="app-filters" role="group" aria-label="Filter applications">
+        <button class="filter-chip active" data-filter="all">All apps <span>12</span></button>
+        <button class="filter-chip" data-filter="published">Published <span>9</span></button>
+        <button class="filter-chip" data-filter="upcoming">Coming soon <span>3</span></button>
+      </div>
+
+      <div class="apps-grid" id="appsGrid">
+
+        <!-- DIU CGPA -->
+        <article class="app-card" data-status="published" data-category="Education">
+          <div class="app-card-top">
+            <div class="app-icon icon-blue">CG</div>
+            <span class="app-status"><i></i> Published</span>
+          </div>
+          <div class="app-category">EDUCATION</div>
+          <h3>DIU CGPA</h3>
+          <p>CGPA calculation utility designed for Daffodil International University students.</p>
+          <div class="app-card-bottom">
+            <span>Academic tool</span>
+            <a href="https://play.google.com/store/apps/details?id=com.deepcore.diu_cgpa" target="_blank"
+              rel="noopener noreferrer">
+              Google Play <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Prayer Times -->
+        <article class="app-card" data-status="published" data-category="Lifestyle">
+          <div class="app-card-top">
+            <div class="app-icon icon-green"><i class="fa-solid fa-mosque"></i></div>
+            <span class="app-status"><i></i> Published</span>
+          </div>
+          <div class="app-category">LIFESTYLE</div>
+          <h3>Prayer Times</h3>
+          <p>Prayer-time information and Islamic utility features for everyday use.</p>
+          <div class="app-card-bottom">
+            <span>Islamic utility</span>
+            <a href="https://play.google.com/store/apps/details?id=com.codesprout.prayer_time" target="_blank"
+              rel="noopener noreferrer">
+              Google Play <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Scientific Calculator -->
+        <article class="app-card" data-status="published" data-category="Utilities">
+          <div class="app-card-top">
+            <div class="app-icon icon-orange"><i class="fa-solid fa-calculator"></i></div>
+            <span class="app-status"><i></i> Published</span>
+          </div>
+          <div class="app-category">UTILITIES</div>
+          <h3>Scientific Calculator</h3>
+          <p>A calculator for everyday arithmetic and scientific calculations.</p>
+          <div class="app-card-bottom">
+            <span>Calculator</span>
+            <a href="https://play.google.com/store/apps/details?id=com.codevex.calculator" target="_blank"
+              rel="noopener noreferrer">
+              Google Play <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Convertly -->
+        <article class="app-card" data-status="published" data-category="Utilities">
+          <div class="app-card-top">
+            <div class="app-icon icon-cyan">CV</div>
+            <span class="app-status"><i></i> Published</span>
+          </div>
+          <div class="app-category">UTILITIES</div>
+          <h3>Convertly</h3>
+          <p>A unit converter for common measurement and everyday conversions.</p>
+          <div class="app-card-bottom">
+            <span>Unit converter</span>
+            <a href="https://play.google.com/store/apps/details?id=com.codevex.convertly" target="_blank"
+              rel="noopener noreferrer">
+              Google Play <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Agebrix -->
+        <article class="app-card" data-status="published" data-category="Utilities">
+          <div class="app-card-top">
+            <div class="app-icon icon-violet">Ag</div>
+            <span class="app-status"><i></i> Published</span>
+          </div>
+          <div class="app-category">UTILITIES</div>
+          <h3>Agebrix</h3>
+          <p>An age calculator for calculating age and exploring date differences.</p>
+          <div class="app-card-bottom">
+            <span>Age calculator</span>
+            <a href="https://play.google.com/store/apps/details?id=com.codeflux.agebrix" target="_blank"
+              rel="noopener noreferrer">
+              Google Play <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Pixnora -->
+        <article class="app-card" data-status="published" data-category="Photo">
+          <div class="app-card-top">
+            <div class="app-icon icon-pink"><i class="fa-regular fa-image"></i></div>
+            <span class="app-status"><i></i> Published</span>
+          </div>
+          <div class="app-category">PHOTO & FILES</div>
+          <h3>Pixnora</h3>
+          <p>An image compression utility for reducing image file sizes.</p>
+          <div class="app-card-bottom">
+            <span>Image compressor</span>
+            <a href="https://play.google.com/store/apps/details?id=com.codeflux.pixnora" target="_blank"
+              rel="noopener noreferrer">
+              Google Play <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Tickdays -->
+        <article class="app-card" data-status="published" data-category="Productivity">
+          <div class="app-card-top">
+            <div class="app-icon icon-yellow"><i class="fa-regular fa-calendar-check"></i></div>
+            <span class="app-status"><i></i> Published</span>
+          </div>
+          <div class="app-category">PRODUCTIVITY</div>
+          <h3>Tickdays</h3>
+          <p>A date reminder tool for keeping track of important days and events.</p>
+          <div class="app-card-bottom">
+            <span>Date reminder</span>
+            <a href="https://play.google.com/store/apps/details?id=com.nexorbit.tickdays" target="_blank"
+              rel="noopener noreferrer">
+              Google Play <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Bminest -->
+        <article class="app-card" data-status="published" data-category="Health">
+          <div class="app-card-top">
+            <div class="app-icon icon-teal">BMI</div>
+            <span class="app-status"><i></i> Published</span>
+          </div>
+          <div class="app-category">HEALTH & FITNESS</div>
+          <h3>Bminest</h3>
+          <p>A BMI calculator for exploring body-mass-index estimates.</p>
+          <div class="app-card-bottom">
+            <span>BMI calculator</span>
+            <a href="https://play.google.com/store/apps/details?id=com.nexorbit.bminest" target="_blank"
+              rel="noopener noreferrer">
+              Google Play <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Skyora -->
+        <article class="app-card" data-status="published" data-category="Weather">
+          <div class="app-card-top">
+            <div class="app-icon icon-sky"><i class="fa-solid fa-cloud-sun"></i></div>
+            <span class="app-status"><i></i> Published</span>
+          </div>
+          <div class="app-category">WEATHER</div>
+          <h3>Skyora</h3>
+          <p>A weather app for checking current conditions and forecasts.</p>
+          <div class="app-card-bottom">
+            <span>Weather</span>
+            <a href="https://play.google.com/store/apps/details?id=com.yassuevex.skyora" target="_blank"
+              rel="noopener noreferrer">
+              Google Play <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Spendora -->
+        <article class="app-card upcoming-card" data-status="upcoming" data-category="Finance">
+          <div class="app-card-top">
+            <div class="app-icon icon-lime"><i class="fa-solid fa-wallet"></i></div>
+            <span class="app-status upcoming-status"><i></i> Coming soon</span>
+          </div>
+          <div class="app-category">FINANCE</div>
+          <h3>Spendora</h3>
+          <p>Income and expense management to help organize personal finances.</p>
+          <div class="app-card-bottom">
+            <span>Personal finance</span>
+            <span class="link-pending">In development</span>
+          </div>
+        </article>
+
+        <!-- Japanese Language -->
+        <article class="app-card upcoming-card" data-status="upcoming" data-category="Education">
+          <div class="app-card-top">
+            <div class="app-icon icon-violet"><i class="fa-solid fa-language"></i></div>
+            <span class="app-status upcoming-status"><i></i> Coming soon</span>
+          </div>
+          <div class="app-category">EDUCATION</div>
+          <h3>Japanese Language</h3>
+          <p>A language-learning project focused on Japanese vocabulary and learning resources.</p>
+          <div class="app-card-bottom">
+            <span>Language learning</span>
+            <a href="https://github.com/mdbappy21/japanise_language" target="_blank" rel="noopener noreferrer">
+              GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- MediHistory AI -->
+        <article class="app-card upcoming-card" data-status="upcoming" data-category="Health">
+          <div class="app-card-top">
+            <div class="app-icon icon-teal"><i class="fa-solid fa-notes-medical"></i></div>
+            <span class="app-status upcoming-status"><i></i> Coming soon</span>
+          </div>
+          <div class="app-category">HEALTH & TECHNOLOGY</div>
+          <h3>MediHistory AI</h3>
+          <p>An AI-powered medical history management project.</p>
+          <div class="app-card-bottom">
+            <span>Health technology</span>
+            <a href="https://github.com/mdbappy21/medihistory" target="_blank" rel="noopener noreferrer">
+              GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="apps-note">
+        <i class="fa-solid fa-circle-info"></i>
+        Explore my Android applications on Google Play. Availability may change if an app is deactivated by me.
+      </p>
+    </section>
+
+
+
+    <section class="section projects-section" id="projects">
+      <div class="shell">
+
+        <div class="section-kicker">04 / SELECTED WORK</div>
+
+        <div class="section-heading-row">
+          <h2 class="section-title">
+            Beyond the <span class="gradient-text">app store.</span>
+          </h2>
+          <p>A selection of applications and development projects built to solve practical problems and explore new
+            technologies.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Meal Management System -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img/meal_management_system_project.png" alt="Meal Management System project preview"
+                loading="lazy">
+            </div>
+            <div class="project-info">
+              <span>FLUTTER · FIREBASE</span>
+              <h3>Meal Management System</h3>
+              <p>A meal management solution for organizing daily meals, expenses, member balances, and role-based
+                access.</p>
+              <a href="https://github.com/mdbappy21/meal_management" target="_blank" rel="noopener noreferrer">
+                View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- DIU CGPA -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img/diu_cgpa_project.png" alt="DIU CGPA application preview" loading="lazy">
+            </div>
+            <div class="project-info">
+              <span>FLUTTER · DART · ANDROID</span>
+              <h3>DIU CGPA</h3>
+              <p>An academic utility designed to help Daffodil International University students calculate and track
+                their CGPA.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.deepcore.diu_cgpa" target="_blank"
+                rel="noopener noreferrer">
+                View on Google Play <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Spendora -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img/spendora_project.png" alt="Spendora income and expense application preview" loading="lazy">
+            </div>
+            <div class="project-info">
+              <span>FLUTTER · DART · FINANCE</span>
+              <h3>Spendora</h3>
+              <p>A personal finance management application for recording income, tracking expenses, and organizing
+                financial transactions.</p>
+              <span class="project-link-pending">In Development</span>
+            </div>
+          </article>
+
+          <!-- Japanese Language -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img/japanese_language_project.png" alt="Japanese Language learning project preview"
+                loading="lazy">
+            </div>
+            <div class="project-info">
+              <span>FLUTTER · EDUCATION · LANGUAGE</span>
+              <h3>Japanese Language</h3>
+              <p>A language-learning project focused on Japanese vocabulary and learning resources.</p>
+              <a href="https://github.com/mdbappy21/japanise_language" target="_blank" rel="noopener noreferrer">
+                View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- MediHistory AI -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img/medihistory_project.png" alt="MediHistory AI project preview" loading="lazy">
+            </div>
+            <div class="project-info">
+              <span>AI · HEALTH TECHNOLOGY</span>
+              <h3>MediHistory AI</h3>
+              <p>An AI-focused medical history management project exploring organized health records and intelligent
+                information handling.</p>
+              <a href="https://github.com/mdbappy21/medihistory" target="_blank" rel="noopener noreferrer">
+                View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
 
         </div>
       </div>
     </section>
+
+
+
+    <section class="contact-section shell" id="contact">
+      <div class="contact-panel">
+        <div class="section-kicker">05 / CONTACT</div>
+
+        <h2 class="section-title">
+          Have an idea?<br>
+          <span class="gradient-text">Let's build it.</span>
+        </h2>
+
+        <p>Have a project, collaboration idea, or just want to connect? Send me a message.</p>
+
+        <div class="contact-links">
+          <a href="mailto:mdbappy21.cse@gmail.com">
+            <i class="fa-regular fa-envelope"></i>
+            Email
+          </a>
+
+          <a href="https://wa.link/aryuce" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+          </a>
+
+          <a href="https://github.com/mdbappy21" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+          </a>
+
+          <a href="https://t.me/mdbappy21" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-telegram"></i>
+            Telegram
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <h3>Send a message</h3>
+
+        <label>
+          Your name
+          <input class="input input-bordered" type="text" id="contactName" placeholder="Your name" required>
+        </label>
+
+        <label>
+          Email address
+          <input class="input input-bordered" type="email" id="contactEmail" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          Message
+          <textarea class="textarea textarea-bordered" id="contactMessage" rows="4"
+            placeholder="Tell me a little about your idea..." required></textarea>
+        </label>
+
+        <button class="button button-primary" type="submit">
+          Compose email
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+        <small>
+          Your default email application will open with your message prepared.
+        </small>
+      </form>
+    </section>
+
   </main>
 
-  <!-- Skills Section -->
-  <section id="skillsSection" style="
-    background-image: url('img/Bg5.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  ">
-    <h2 class="text-4xl font-bold text-white mb-10">
-      <span class="text-[#FF5733]">My</span> Skills
-    </h2>
-
-    <div class="grid gap-6 w-full max-w-7xl
-            [grid-template-columns:repeat(auto-fit,minmax(240px,1fr))]">
-
-      <!-- Flutter -->
-      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
-        <img src="img/flutter.png" alt="Flutter" class="mx-auto w-12 mb-4" />
-        <h3 class="text-2xl font-bold text-center mb-2">Flutter</h3>
-        <p class="text-justify">
-          My primary framework for building scalable, high-performance
-          cross-platform mobile applications with clean UI and architecture.
-        </p>
-      </div>
-
-      <!-- Dart -->
-      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
-        <img src="img/Dart.png" alt="Dart" class="mx-auto w-12 mb-4" />
-        <h3 class="text-2xl font-bold text-center mb-2">Dart</h3>
-        <p class="text-justify">
-          The core language I use with Flutter to write efficient, structured,
-          and maintainable application logic.
-        </p>
-      </div>
-
-      <!-- Python -->
-      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
-        <img src="img/Python.png" alt="Python" class="mx-auto w-12 mb-4" />
-        <h3 class="text-2xl font-bold text-center mb-2">
-          Python <span class="text-sm font-normal">(Beginner)</span>
-        </h3>
-        <p class="text-justify">
-          Currently learning Python for problem-solving, scripting, and backend
-          fundamentals with a focus on clean and readable code.
-        </p>
-      </div>
-
-      <!-- Java -->
-      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
-        <img src="img/java.svg" alt="Java" class="mx-auto w-12 mb-4" />
-        <h3 class="text-2xl font-bold text-center mb-2">Java</h3>
-        <p class="text-justify">
-          Strengthened my understanding of object-oriented programming and
-          structured software development.
-        </p>
-      </div>
-
-      <!-- C -->
-      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
-        <img src="img/c.png" alt="C" class="mx-auto w-12 mb-4" />
-        <h3 class="text-2xl font-bold text-center mb-2">C</h3>
-        <p class="text-justify">
-          Built a strong foundation in programming fundamentals, memory
-          management, and logical problem-solving.
-        </p>
-      </div>
-
-      <!-- Git -->
-      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
-        <img src="img/git.png" alt="Git" class="mx-auto w-12 mb-4" />
-        <h3 class="text-2xl font-bold text-center mb-2">Git</h3>
-        <p class="text-justify">
-          Used for version control, code management, and collaboration in
-          personal and team-based projects.
-        </p>
-      </div>
-
-      <!-- Firebase -->
-      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
-        <img src="img/firebase.png" alt="Firebase" class="mx-auto w-12 mb-4" />
-        <h3 class="text-2xl font-bold text-center mb-2">Firebase</h3>
-        <p class="text-justify">
-          Implemented authentication, real-time database, and backend services
-          for Flutter applications.
-        </p>
-      </div>
-
-      <!-- State Management -->
-      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
-        <img src="img/state.png" alt="State Management" class="mx-auto w-12 mb-4" />
-        <h3 class="text-2xl font-bold text-center mb-2">
-          State Management
-        </h3>
-        <p class="text-justify">
-          Applied state management techniques in Flutter to build scalable and
-          maintainable application architectures.
-        </p>
-      </div>
-
-      <!-- SQLite -->
-      <div class="card bg-[#2b2a2b] text-white p-6 rounded-lg max-w-sm shadow-md">
-        <img src="img/sqlite.png" alt="SQLite" class="mx-auto w-12 mb-4" />
-        <h3 class="text-2xl font-bold text-center mb-2">SQLite</h3>
-        <p class="text-justify">
-          Used for implementing local data storage and offline-first features in
-          Flutter applications.
-        </p>
-      </div>
-
+  <footer class="site-footer">
+    <div class="shell footer-inner"><a class="brand" href="#home"><span class="brand-mark">B</span><span>md<span
+            class="accent">bappy</span><small>.dev</small></span></a>
+      <p>Designed & built by Md Bappy · © <span id="year"></span></p><a href="#home" class="back-top">Back to top ↑</a>
     </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projectsSection" style="
-    background-image: url('img/Bg8.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 60px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  ">
-    <h2 class="text-4xl font-bold text-white mb-10 text-center">
-      <span class="text-[#FF5733]">My</span> Projects
-    </h2>
-
-    <!-- Carousel Wrapper (Centered) -->
-    <div class="relative w-full max-w-5xl overflow-hidden">
-
-      <!-- Slides Container -->
-      <div id="projectCarousel" class="flex transition-transform duration-500 ease-in-out"
-        style="transform: translateX(0%);">
-
-        <!-- Slide 1 -->
-        <div class="min-w-full flex justify-center">
-          <div class="card bg-[#01010] text-white shadow-xl w-full max-w-3xl">
-            <img src="img/project1.png" alt="DIU CGPA" />
-            <div class="card-body">
-              <h3 class="card-title text-2xl">DIU CGPA</h3>
-              <p>
-                A Flutter application designed for Daffodil International University
-                students to calculate CGPA with detailed semester-wise results.
-              </p>
-              <p class="text-sm text-gray-300">
-                Flutter • Dart • Api integration • Firebase Cloud Messaaging • Local Storage
-              </p>
-              <div class="card-actions mt-4 gap-3">
-                <a href="https://play.google.com/store/apps/details?id=com.deepcore.diu_cgpa" target="_blank"
-                  class="btn btn-sm bg-[#0c2e2b] text-white">Playstore</a>
-                <a href="" class="btn btn-sm btn-outline text-white">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="min-w-full flex justify-center">
-          <div class="card bg-[#01010] text-white shadow-xl w-full max-w-3xl">
-            <img src="img/project2.png" alt="Prayer Times" />
-            <div class="card-body">
-              <h3 class="card-title text-2xl">Prayer Times</h3>
-              <p>
-                A Flutter application that provides accurate prayer times, Qibla
-                direction, and location-based Islamic utilities.
-              </p>
-              <p class="text-sm text-gray-300">
-                Flutter • APIs • Location Services
-              </p>
-              <div class="card-actions mt-4 gap-3">
-                <a href="https://github.com/mdbappy21/prayer_times" target="_blank"
-                  class="btn btn-sm bg-[#0c2e2b] text-white">GitHub</a>
-                <a href="" class="btn btn-sm btn-outline text-white">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="min-w-full flex justify-center">
-          <div class="card bg-[#01010] text-white shadow-xl w-full max-w-3xl">
-            <img src="img/project3.png" alt="Meal Management System" />
-            <div class="card-body">
-              <h3 class="card-title text-2xl">Meal Management System</h3>
-              <p>
-                A Flutter-based system for managing daily meals, expenses, and member
-                balances with role-based access.
-              </p>
-              <p class="text-sm text-gray-300">
-                Flutter • Firebase • Api Integration
-              </p>
-              <div class="card-actions mt-4 gap-3">
-                <a href="https://github.com/mdbappy21/meal_management" target="_blank"
-                  class="btn btn-sm bg-[#0c2e2b] text-white">GitHub</a>
-                <a href="" class="btn btn-sm btn-outline text-white">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="min-w-full flex justify-center">
-          <div class="card bg-[#01010] text-white shadow-xl w-full max-w-3xl">
-            <img src="img/project4.png" alt="Smart Car Parking System" />
-            <div class="card-body">
-              <h3 class="card-title text-2xl">Smart Car Parking System</h3>
-              <p>
-                A smart parking solution built with Flutter, enabling real-time parking
-                slot monitoring and reservation using IoT and backend services.
-              </p>
-              <p class="text-sm text-gray-300">
-                Flutter • Firebase • IoT Integration
-              </p>
-              <div class="card-actions mt-4 gap-3">
-                <a href="https://github.com/mdbappy21/smart_car_parking" target="_blank"
-                  class="btn btn-sm bg-[#0c2e2b] text-white">GitHub</a>
-                <a href="" class="btn btn-sm btn-outline text-white">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 5 -->
-        <div class="min-w-full flex justify-center">
-          <div class="card bg-[#01010] text-white shadow-xl w-full max-w-3xl">
-            <img src="img/project5.png" alt="Weather App" />
-            <div class="card-body">
-              <h3 class="card-title text-2xl">Weather App</h3>
-              <p>
-                A Flutter weather application that displays real-time weather conditions
-                and forecasts based on user location.
-              </p>
-              <p class="text-sm text-gray-300">
-                Flutter • REST API
-              </p>
-              <div class="card-actions mt-4 gap-3">
-                <a href="https://github.com/mdbappy21/weather_app" target="_blank"
-                  class="btn btn-sm bg-[#0c2e2b] text-white">GitHub</a>
-                <a href="" class="btn btn-sm btn-outline text-white">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Navigation Buttons -->
-      <button class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2" onclick="prevProject()">
-        ❮
-      </button>
-
-      <button class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2" onclick="nextProject()">
-        ❯
-      </button>
-
-      <!-- Indicators -->
-      <div id="projectIndicators" class="flex justify-center gap-2 mt-6"></div>
-    </div>
-  </section>
-
-
-  <!-- contact section -->
-  <section class="p-20" id="ContactSection"
-    style="background-image: url('img/Bg7.png');background-repeat: no-repeat;background-size: cover;">
-    <div class="flex justify-around flex-col md:flex-col lg:flex-row">
-      <div class="text-white space-y-4" style="margin: 100px">
-        <h2 class="text-3xl font-bold">
-          Contact <span class="text-[#FF5733]">Me!</span>
-        </h2>
-        <p class="text-2xl font font-medium">
-          If You Have Any Project In Your Mind Hire me!
-        </p>
-        <p>
-          I'm a flutter developer creating best Application & brave <br />
-          interface for you.
-        </p>
-        <p>mdbappy21.cse@gmail.com</p>
-
-        <div class="gap-4 space-x-5" style="display: inline-flex">
-          <a href="https://www.facebook.com/mdsohanurrahman.bappy.9?mibextid=ZbWKwL" target="_blank">
-            <i class="fab fa-facebook fa-2x"></i></a>
-
-          <a href="https://t.me/mdbappy21" target="_blank">
-            <i class="fa-brands fa-telegram fa-2x"></i>
-          </a>
-
-          <a href="https://wa.link/c79zkw" target="_blank">
-            <i class="fa-brands fa-whatsapp fa-2x"></i></a>
-
-          <a href="mailto:mdbappy21.cse@gmail.com" target="_blank">
-            <i class="fa-solid fa-envelope fa-2x"></i>
-          </a>
-        </div>
-      </div>
-      <div class="space-y-8">
-        <h2 class="text-2xl font-bold text-white" style="text-align: left; padding: 20px">
-          Ask me any question?
-        </h2>
-
-        <div class="flex-col space-y-7">
-          <input type="text" placeholder="Your Name" class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
-            style="color: white" />
-          <br />
-          <input type="email" placeholder="Your Email Address" class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
-            style="color: white" />
-          <br />
-          <input type="text" placeholder="Your Phonre Number " class="input input-bordered w-full max-w-xs bg-[#2B2A2B]"
-            style="color: white" />
-          <textarea name="" id="" cols="60" rows="10" placeholder="How can i help you?" class="bg-[#2B2A2B]"
-            style="color: white"></textarea>
-        </div>
-        <button class="btn bg-[#0c2e2b] text-white" id="sendEmailButton">Send Messaage</button>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer footer-center p-10 bg-[#000000] text-white text-base-content rounded">
-    <!-- <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded"> -->
-    <div class="grid grid-flow-col gap-4">
-      <a class="link link-hover">About us</a>
-      <a class="link link-hover">Contact</a>
-      <a class="link link-hover">Jobs</a>
-    </div>
-    <div>
-      <div class="grid grid-flow-col gap-4">
-        <a href="https://www.facebook.com/mdsohanurrahman.bappy.9?mibextid=ZbWKwL" target="_blank">
-          <i class="fab fa-facebook fa-2x"></i></a>
-
-        <a href="https://t.me/mdbappy21" target="_blank">
-          <i class="fa-brands fa-telegram fa-2x"></i>
-        </a>
-
-        <a href="https://wa.link/c79zkw" target="_blank">
-          <i class="fa-brands fa-whatsapp fa-2x"></i></a>
-
-        <a href="mailto:mdbappy21.cse@gmail.com" target="_blank">
-          <i class="fa-solid fa-envelope fa-2x"></i>
-        </a>
-      </div>
-    </div>
-    <div>
-      <p>Copyright © 2026 - All right reserved by Md Bappy</p>
-    </div>
-    <!-- </footer> -->
   </footer>
-
-  <!-- Back to Top Button -->
-  <button id="backToTopBtn" class="btn btn-circle bg-[#0c2e2b] text-white fixed bottom-6 right-6 hidden shadow-lg"
-    aria-label="Back to top">
-    ↑
-  </button>
-
   <script src="script.js"></script>
-
 </body>
+
 </html>

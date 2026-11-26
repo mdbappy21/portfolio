@@ -1,86 +1,105 @@
-  document.getElementById("sendEmailButton").addEventListener("click", function () {
-      window.location.href =
-        "mailto:mdbappy1350@gmail.com?subject=Your%20Subject&body=Your%20message%20here";
-    });
+document.addEventListener('DOMContentLoaded', () => {
+  // Mobile navigation
+  const menuButton = document.getElementById('mobileMenuBtn');
+  const mobileNav = document.getElementById('mobileNav');
 
-    const backToTopBtn = document.getElementById("backToTopBtn");
+  menuButton?.addEventListener('click', () => {
+    if (!mobileNav) return;
 
-    // Show / hide button based on scroll
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        backToTopBtn.classList.remove("hidden");
-      } else {
-        backToTopBtn.classList.add("hidden");
+    const isOpen = mobileNav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.innerHTML = isOpen
+      ? '<i class="fa-solid fa-xmark"></i>'
+      : '<i class="fa-solid fa-bars"></i>';
+  });
+
+  mobileNav?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      menuButton?.setAttribute('aria-expanded', 'false');
+
+      if (menuButton) {
+        menuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
       }
     });
+  });
 
-    // Scroll to top smoothly
-    backToTopBtn.addEventListener("click", () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
+  // Application filters
+  const filterButtons = document.querySelectorAll('.filter-chip');
+  const appCards = document.querySelectorAll('.app-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      filterButtons.forEach(item => item.classList.remove('active'));
+      button.classList.add('active');
+
+      const filter = button.dataset.filter;
+
+      appCards.forEach(card => {
+        card.hidden = filter !== 'all' && card.dataset.status !== filter;
       });
     });
+  });
 
-    let currentProject = 0;
-    let autoSlideInterval;
+  // Contact form
+  const contactForm = document.getElementById('contactForm');
 
-    const carousel = document.getElementById("projectCarousel");
-    const slides = document.querySelectorAll("#projectCarousel > div");
-    const indicatorsContainer = document.getElementById("projectIndicators");
+  contactForm?.addEventListener('submit', event => {
+    event.preventDefault();
 
-    // ---------- CREATE INDICATORS ----------
-    slides.forEach((_, index) => {
-      const dot = document.createElement("button");
-      dot.className =
-        "w-3 h-3 rounded-full bg-gray-500 hover:bg-white transition";
-      dot.addEventListener("click", () => {
-        currentProject = index;
-        updateCarousel();
-        resetAutoSlide();
+    const name = document.getElementById('contactName')?.value.trim();
+    const email = document.getElementById('contactEmail')?.value.trim();
+    const message = document.getElementById('contactMessage')?.value.trim();
+
+    if (!name || !email || !message) {
+      alert('Please complete all fields.');
+      return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    const subject = encodeURIComponent(`Portfolio enquiry from ${name}`);
+
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\n${message}`
+    );
+
+    const gmailUrl =
+      `https://mail.google.com/mail/?view=cm&fs=1&to=mdbappy21.cse@gmail.com&su=${subject}&body=${body}`;
+
+    window.open(gmailUrl, '_blank');
+  });
+
+  // Dynamic footer year
+  const yearElement = document.getElementById('year');
+
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+
+  // Active navigation highlighting
+  const sections = document.querySelectorAll('main section[id]');
+  const navLinks = document.querySelectorAll('.desktop-nav .nav-link');
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.toggle(
+              'active',
+              link.getAttribute('href') === `#${entry.target.id}`
+            );
+          });
+        }
       });
-      indicatorsContainer.appendChild(dot);
-    });
+    }, { rootMargin: '-35% 0px -55% 0px' });
 
-    function updateIndicators() {
-      [...indicatorsContainer.children].forEach((dot, index) => {
-        dot.classList.toggle("bg-white", index === currentProject);
-        dot.classList.toggle("bg-gray-500", index !== currentProject);
-      });
-    }
-
-    // ---------- CAROUSEL LOGIC ----------
-    function updateCarousel() {
-      carousel.style.transform = `translateX(-${currentProject * 100}%)`;
-      updateIndicators();
-    }
-
-    function nextProject() {
-      currentProject = (currentProject + 1) % slides.length;
-      updateCarousel();
-      resetAutoSlide();
-    }
-
-    function prevProject() {
-      currentProject =
-        (currentProject - 1 + slides.length) % slides.length;
-      updateCarousel();
-      resetAutoSlide();
-    }
-
-    // ---------- AUTO SLIDE ----------
-    function startAutoSlide() {
-      autoSlideInterval = setInterval(() => {
-        currentProject = (currentProject + 1) % slides.length;
-        updateCarousel();
-      }, 5000); // 5 seconds
-    }
-
-    function resetAutoSlide() {
-      clearInterval(autoSlideInterval);
-      startAutoSlide();
-    }
-
-    // ---------- INIT ----------
-    updateCarousel();
-    startAutoSlide();
+    sections.forEach(section => observer.observe(section));
+  }
+});
